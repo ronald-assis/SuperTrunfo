@@ -165,7 +165,7 @@ a{
 
 }
 a:hover{
-    color: #a0e6f0; text-shadow: black 0.1em 0.1em 0.2em
+    color: #a0e6f0; text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em
 }
 
 .carta-status input {
