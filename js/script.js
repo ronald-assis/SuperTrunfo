@@ -225,4 +225,4 @@ function reset() {
     divCartaJogador.style = ""   
     sortearCarta()
 }
-alert("Sortei a carta, escolha seu atributo e só jogar. Logo após jogar, clique no resultado e um reset para um new game!")
+alert("Sortei a carta, escolha seu atributo e só jogar. Logo após jogar, click on the result.Then click restart for a new game!")
