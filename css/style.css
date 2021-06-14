@@ -1,0 +1,261 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    
+    height: 750px;
+    background-image: url('https://i.pinimg.com/originals/78/b0/5c/78b05cf42aebbc510fc96ed8fc826f87.jpg');
+    background-color: #922d05;
+    background-size: cover;
+    /* background-position: center top; */
+    background-repeat: no-repeat;
+    margin: 0px 8px;
+    /* padding-bottom: 20vh; */
+    /* background-color: tomato; */
+}
+
+.page-logo{
+    /* background-color: tomato; */
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left:10px;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.page-title {
+    
+    /* background-color: tomato; */
+    width: 315px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 38px;
+    text-shadow: 6px 4px black;
+    /* position: absolute; */
+    color: #ffa600d2;
+    margin: 0px auto;
+    /* height: 40px; */
+    animation-duration: 1s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slidein {
+    from {
+        
+        transform: scale(1);
+    }
+  
+    to {
+        transform: scale(1.2);
+    }
+}
+
+button, .button-jogar {
+    background-color: #922d05bb;
+    font-family: 'Permanent Marker', cursive;
+    color: rgba(255, 255, 255, 0.568);
+    padding: .6rem 1.5rem;
+    margin: 1rem 5;
+    border: 3px solid black;
+    border-radius: 5px;
+    /* border: none; */
+    font-size: 1rem;
+    transition: transform 117ms ease-in-out;   
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+.button-jogar{
+    margin-bottom: 0px;
+    margin-right: 10px;
+    font-family: 'Permanent Marker', cursive;
+    background-color: #cf3f06d5;
+    color: #ffa600d2;
+    border: 4px solid black;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-reset{
+    color: #ffa600d2;
+    background-color: #cf3f06c4; 
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    /* background-color: tomato; */
+}
+
+h2 {
+    color:#ffa600d2;
+    /* background-color: tomato; */
+    text-shadow: 6px 4px black;
+    font-family: 'Permanent Marker', cursive;
+    transition: transform 117ms ease-in-out;
+    width: 400px;
+    margin: 0 auto;
+    animation-duration: 1s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slidein {
+    from {
+        
+        transform: scale(1);
+    }
+  
+    to {
+        transform: scale(1.1);
+    }
+}
+
+#carta-jogador, #carta-maquina {
+    width: 360px;
+    height: 500px;
+    overflow: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    background-size: 350px 300px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: 10px;
+    border-radius: 33px;
+}
+
+#carta-jogador h3 {
+    /* background-color: tomato; */
+    text-align: center;
+}
+
+.carta-imagem {
+    border: 1px solid black;
+    height: 100px;
+    margin: 10px;
+}
+
+.carta-imagem img {
+    width: 100%;
+    height: 100%;
+}
+
+.carta-status {
+    height: 160px;
+    margin: 2rem;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    margin-left: 87px;
+    /* background-color: tomato; */
+}
+
+a{
+    color: black;
+
+}
+a:hover{
+    color: #a7e7f0; text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.carta-status input {
+    margin: 20px 10px;
+}
+
+.resultado-final {
+    
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weigth: bolder;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 5px 5px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgba(206, 171, 58, 0.493);
+    /* background-color: #00e1ff59; */
+    transform: rotate(0deg);
+    margin-top: 200px;
+    animation-duration: 1s;
+    animation-name: resultado;
+    animation-direction: alternate;
+ 
+}
+
+.resultado-final:hover{
+    background-color: #00e1ff86;
+}
+
+@keyframes resultado {
+    from {
+        
+    
+        transform: rotate(0deg);
+    }
+  
+    to {
+    
+        transform: rotate(710deg);
+    }
+}
+
+.resultado-final:hover{
+    animation-iteration-count: infinite;
+    transition: all 2s linear;
+    transform: rotate(360deg);
+}
+
+
+
+.--spacing {
+    margin-left: 2.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.carta-subtitle {    
+    z-index: 2;
+    position: absolute;
+    top: 16px;
+    left: 37px;
+    font-weight: 800;
+    text-transform: uppercase;
+    
+}
+
+#cartas {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.carta-status p {
+    margin-bottom: 2rem;
+    margin-left: 30px;
+}
+
