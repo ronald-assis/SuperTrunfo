@@ -2,9 +2,9 @@ let cartaUm = {
     nome: "Naruto Usumaki",
     imagem: "https://i.pinimg.com/736x/88/6f/b7/886fb779913e7b50911d532aa4b20432.jpg",
     atributos: {
-        forca: 999,
-        inteligencia: 999,
-        percepcao: 999
+        strength: 999,
+        intelligence: 999,
+        perception: 999
     }
 }
 
@@ -12,9 +12,9 @@ let cartaDois = {
     nome: "Sasuki Uchiha",
     imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgHTeTL9JU3M_nMGPfFDTU2h2ZyvWg4I7Wbw&usqp=CAU",
     atributos: {
-        forca: 210,
-        inteligencia: 290,
-        percepcao: 280
+        strength: 210,
+        intelligence: 290,
+        perception: 280
     }
 }
 
@@ -22,9 +22,9 @@ let cartaTres = {
     nome: "Sakura Haruno",
     imagem: "https://i.pinimg.com/originals/5e/8e/ac/5e8eac7b28585e1df04f3ea9c3ec696c.jpg",
     atributos: {
-        forca: 200,
-        inteligencia: 180,
-        percepcao: 100
+        strength: 200,
+        intelligence: 180,
+        perception: 100
     }
 }
 
@@ -32,9 +32,9 @@ let cartaQuatro = {
     nome: "Obito Uchiha",
     imagem: "https://uploads.spiritfanfiction.com/fanfics/historias/202011/meu-amor-e-um-mascarado-obito-uchiha-21055043-201120201243.jpg",
     atributos: {
-        forca: 250,
-        inteligencia: 380,
-        percepcao: 200
+        strength: 250,
+        intelligence: 380,
+        perception: 200
     }
 }
 
@@ -42,9 +42,9 @@ let cartaCinco = {
     nome: "Rock Lee",
     imagem: "https://criticalhits.com.br/wp-content/uploads/2019/01/maxresdefault-12.jpg",
     atributos: {
-        forca: 230,
-        inteligencia: 90,
-        percepcao: 80
+        strength: 230,
+        intelligence: 90,
+        perception: 80
     }
 }
 
@@ -52,9 +52,9 @@ let cartaSeis = {
     nome: "Sesto Hokage",
     imagem: "https://i.pinimg.com/originals/f1/de/3c/f1de3cdc23f8cbc94fccdbf0c3cdae1a.jpg",
     atributos: {
-        forca: 200,
-        inteligencia: 380,
-        percepcao: 200
+        strength: 200,
+        intelligence: 380,
+        perception: 200
     }
 }
 
@@ -62,9 +62,9 @@ let cartaSete = {
     nome: "Gaara",
     imagem: "https://i.pinimg.com/originals/c2/f2/eb/c2f2ebb36eb49abda96bde0a56b69dbb.jpg",
     atributos: {
-        forca: 190,
-        inteligencia: 380,
-        percepcao: 500
+        strength: 190,
+        intelligence: 380,
+        perception: 500
     }
 }
 
@@ -72,9 +72,9 @@ let cartaOito = {
     nome: "Itachi Uchiha",
     imagem: "https://preview.redd.it/s5jd73rvt5k51.jpg?width=640&crop=smart&auto=webp&s=b9729532fbefa3f4fcb26390e2048fdfd6bb07e6",
     atributos: {
-        forca: 190,
-        inteligencia: 180,
-        percepcao: 500
+        strength: 190,
+        intelligence: 180,
+        perception: 500
     }
 }
 
@@ -82,9 +82,9 @@ let cartaNove = {
     nome: "Orochimaro",
     imagem: "https://pm1.narvii.com/6396/0b8a45258a8d741e4939a9446623cebc2faa2f9d_hq.jpg",
     atributos: {
-        forca: 150,
-        inteligencia: 150,
-        percepcao: 100
+        strength: 150,
+        intelligence: 150,
+        perception: 100
     }
 }
 
@@ -92,9 +92,9 @@ let cartaDez = {
     nome: "Sai",
     imagem: "https://wallpaperaccess.com/full/3026280.jpg",
     atributos: {
-        forca: 90,
-        inteligencia: 280,
-        percepcao: 150
+        strength: 90,
+        intelligence: 280,
+        perception: 150
     }
 }
 
@@ -102,9 +102,9 @@ let cartaOnze = {
     nome: "Shikamaru Nara",
     imagem: "https://i.pinimg.com/originals/c1/bb/8c/c1bb8c4045895685655c5835e84a7e70.jpg",
     atributos: {
-        forca: 50,
-        inteligencia: 680,
-        percepcao: 90
+        strength: 50,
+        intelligence: 680,
+        perception: 90
     }
 }
 
@@ -112,9 +112,9 @@ let cartaDoze = {
     nome: "Madara Uchira",
     imagem: "https://i.pinimg.com/736x/32/2d/f9/322df99934f9b2ecc3088c54ca63a2eb.jpg",
     atributos: {
-        forca: 500,
-        inteligencia: 500,
-        percepcao: 500
+        strength: 500,
+        intelligence: 500,
+        perception: 500
     }
 }
 
@@ -151,7 +151,7 @@ function exibirCartaJogador() {
     let opcoesTexto = ""
 
     for (let atributo in cartaJogador.atributos) {
-        opcoesTexto += "<input type='radio' name='atributo' value='" + atributo + "'>" + atributo + " " + cartaJogador.atributos[atributo] + "<br>"
+        opcoesTexto += "<input type='radio' name='atributo'style='margin-bottom:5px;margin-top:18px;' value='" + atributo + "'>" + atributo + " " + cartaJogador.atributos[atributo] + "<br>"
     }
 
     let html = "<div id='opcoes' class='carta-status'</div>"

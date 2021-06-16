@@ -1,13 +1,13 @@
 body {
     font-family: 'Roboto Mono', monospace;
-    
-    height: 750px;
+    width: auto;
+    height: auto;
     background-image: url('https://i.pinimg.com/originals/78/b0/5c/78b05cf42aebbc510fc96ed8fc826f87.jpg');
     background-color: #922d05;
     background-size: cover;
     /* background-position: center top; */
     background-repeat: no-repeat;
-    margin: 0px 8px;
+    margin: 0 auto;
     /* padding-bottom: 20vh; */
     /* background-color: tomato; */
 }
@@ -22,7 +22,7 @@ body {
 
 .container {
     text-align: center;
-    padding: 20px;
+    padding: auto;
 }
 
 .page-title {
@@ -74,11 +74,14 @@ button:hover{
     margin-bottom: 0px;
     margin-right: 10px;
     font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
     background-color: #cf3f06d5;
     color: #ffa600d2;
     border: 4px solid black;
     width: 200px;
+    height: 50px;
     display: flex;
+    padding-top: 0%;
     justify-content: center;
 }
 
@@ -117,10 +120,13 @@ h2 {
         transform: scale(1.1);
     }
 }
-
+/* #title{
+    display: flex;
+    flex-direction: column;
+} */
 #carta-jogador, #carta-maquina {
-    width: 360px;
-    height: 500px;
+    width: 340px;
+    height: 400px;
     overflow: auto;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -128,11 +134,11 @@ h2 {
     display: flex;
     align-items: flex-end;
     position: relative;
-    background-size: 350px 300px;
+    background-size: 310px 210px;
     background-repeat: no-repeat;
-    background-position-x: 5px;
-    background-position-y: 10px;
-    border-radius: 33px;
+    background-position-x: 9px;
+    background-position-y: 39px;
+    border-radius: 23px;
 }
 
 #carta-jogador h3 {
@@ -152,11 +158,11 @@ h2 {
 }
 
 .carta-status {
-    height: 160px;
+    height: 123px;
     margin: 2rem;
     color: rgb(255, 255, 255);
     z-index: 2;
-    margin-left: 87px;
+    margin-left: 69.5px;
     /* background-color: tomato; */
 }
 
@@ -172,14 +178,17 @@ a:hover{
     margin: 20px 10px;
 }
 
-.resultado-final {
-    
+#resultado{
+    height: 300px;
+}
+.resultado-final{    
     color: rgb(0, 0, 0);
     font-size: 2rem;
     text-transform: uppercase;
     font-weigth: bolder;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
+    /* margin: 200 auto; */
+    margin-top: 85%;
     width: 6em;
     padding: 1rem;
     border-radius: 4px;
@@ -188,7 +197,6 @@ a:hover{
     background-color: rgba(206, 171, 58, 0.493);
     /* background-color: #00e1ff59; */
     transform: rotate(0deg);
-    margin-top: 200px;
     animation-duration: 1s;
     animation-name: resultado;
     animation-direction: alternate;
@@ -208,7 +216,7 @@ a:hover{
   
     to {
     
-        transform: rotate(710deg);
+        transform: rotate(210deg);
     }
 }
 
@@ -240,7 +248,7 @@ form {
 .carta-subtitle {    
     z-index: 2;
     position: absolute;
-    top: 16px;
+    top: 8.5px;
     left: 37px;
     font-weight: 800;
     text-transform: uppercase;
@@ -255,7 +263,10 @@ form {
 }
 
 .carta-status p {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     margin-left: 30px;
 }
 
+.carta-status input {
+    margin: 20px 10px;
+}
