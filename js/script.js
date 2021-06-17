@@ -175,11 +175,11 @@ function jogar() {
     let atributoSelecionado = obtemAtributoSelecionado()
 
     if (cartaJogador.atributos[atributoSelecionado] > cartaMaquina.atributos[atributoSelecionado]) {
-        resultado = '<p class="resultado-final"><a href="https://github.com/ronald-assis" target="_blank">Você vai sobreviver</a></p>'
+        resultado = '<p class="resultado-final"><a href="https://github.com/ronald-assis/SuperTrunfo" target="_blank">Você vai sobreviver</a></p>'
     } else if (cartaJogador.atributos[atributoSelecionado] < cartaMaquina.atributos[atributoSelecionado]) {
-        resultado = '<p class="resultado-final"><a href="https://github.com/ronald-assis" target="_blank">Você Morreu </a></p>'
+        resultado = '<p class="resultado-final"><a href="https://github.com/ronald-assis/SuperTrunfo" target="_blank">Você Morreu </a></p>'
     } else {
-        resultado = '<p class="resultado-final"><a href="https://github.com/ronald-assis" target="_blank">Empatou</a></p>'
+        resultado = '<p class="resultado-final"><a href="https://github.com/ronald-assis/SuperTrunfo" target="_blank">Empatou</a></p>'
     }
     divResultado.innerHTML = resultado
 
